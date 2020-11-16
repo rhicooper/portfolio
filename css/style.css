@@ -1,0 +1,102 @@
+/*
+Colours used:
+Primary Colour (Taupe) #DBD6D5
+Secondary Colour (Grey-Blue) #587291
+Tertiary Colour (Cream) #FDFFFC
+Tertiary Colour (Dark Grey) #001524
+*/
+
+/* FONTS */
+body {
+  background-color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;    /* Sets the font size to 16px */
+  font-weight: 300;   /* Sets the font weight to 300 */
+  line-height: 1.6;   /* Sets the line-height to 1.6 * the font-size */
+  color: #001524;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/* IMAGES */
+img {
+  width: 100%;
+}
+
+/* HYPERLINKS */
+a {
+  color: #587291;
+  font-weight: 700;
+  text-decoration: none;  /* No underlining */
+}
+
+a:visited {   /* visited link */
+  color: #DBD6D5;
+}
+
+a:hover, a:focus {
+  color: #DBD6D5;
+  text-decoration: underline;   /* Underlining when hovering over a link */
+}
+
+a:active {  /* selected link */
+  color: #001524;
+}
+
+/* BUTTONS - Must be at the end of a css doc, or at least under ALL hyperlink stylings */
+.button {
+  display: inline-block;  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #DBD6D5;
+  color: #001524;   /* THIS ISN'T WORKING??? needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #DBD6D5;  /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button:active {
+  color: #587291;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #587291;
+  text-transform: uppercase;
+  border: 2px solid #DBD6D5;
+}
+
+.button.contact:hover {
+  background-color: #DBD6D5;
+  color: #ffffff;
+}
+
+.button.contact:active { background-color: #000000;
+  color: #ffffff; }
