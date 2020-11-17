@@ -46,30 +46,20 @@ img {
 }
 
 /* HYPERLINKS */
-a {
+a, a:visited {
   color: #587291;
   font-weight: 700;
-  text-decoration: none;  /* No underlining */
 }
 
-a:visited {   /* visited link */
+a:hover, a:focus, a:active {
   color: #DBD6D5;
-}
-
-a:hover, a:focus {
-  color: #DBD6D5;
-  text-decoration: underline;   /* Underlining when hovering over a link */
-}
-
-a:active {  /* selected link */
-  color: #001524;
 }
 
 /* BUTTONS - Must be at the end of a css doc, or at least under ALL hyperlink stylings */
 .button {
   display: inline-block;  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #DBD6D5;
-  color: #001524;   /* THIS ISN'T WORKING??? needed to override the default link color */
+  color: #ffffff;   /* THIS ISN'T WORKING??? needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
