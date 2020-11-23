@@ -29,6 +29,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2em;
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
@@ -65,7 +66,7 @@ a:hover, a:focus, a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #DBD6D5;
+  background-color: #001524;
   text-decoration: none;
   color: #ffffff;
   /* needed to override the default link color - for non visited */
@@ -92,8 +93,8 @@ a:hover, a:focus, a:active {
 }
 
 .button.contact {
-  background-color: transparent;
-  color: #000000;
+  background-color: #001524;
+  color: #ffffff;
   text-transform: uppercase;
   border: 2px solid #ffffff;
 }
@@ -109,6 +110,9 @@ a:hover, a:focus, a:active {
 }
 
 /* LAYOUT STYLING */
+.section {
+  padding: 10px 0
+}
 
 .container {
   padding: 0 15px;
@@ -124,19 +128,14 @@ a:hover, a:focus, a:active {
   border-bottom: 1px solid #4a4a4a;
 }
 
-h1 {
-  text-align: center;
-  /* Centers text */
-}
-
 .logo {
-  max-width: 250px;
+  max-width: 80px;
 }
 
 header {
   background-color: #DBD6D5;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 5px 0;
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
   position: fixed;
   width: 100%;
@@ -148,7 +147,7 @@ footer {
 }
 
 main {
-  padding-top: 334px;
+  padding-top: 154px;
 }
 
 nav>ul {
@@ -168,10 +167,7 @@ nav>ul>li>a {
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
-}
-
-#hero {
-  background-color: #DBD6D5;
+  text-decoration: none;
 }
 
 #hero {
@@ -179,4 +175,20 @@ nav>ul>li>a {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center
+}
+
+#hero span {
+  display: block;
+  font-size: 0.8em;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+#contact {
+  padding: 5px 0;
+}
+
+.social {
+  padding: 10px 0
 }
