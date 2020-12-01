@@ -52,6 +52,10 @@ img {
   width: 100%;
 }
 
+.logo {
+  max-width: 80px;
+}
+
 /* HYPERLINKS */
 a, a:visited {
   color: #587291;
@@ -143,14 +147,10 @@ a:hover, a:focus, a:active {
   padding-bottom: 10px;
 }
 
-.logo {
-  max-width: 80px;
-}
 
 header {
   background-color: #DBD6D5;
-  text-align: center;
-  padding: 10px 5px 0;
+  padding: 10px 0 4px;
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
   position: fixed;
   width: 100%;
@@ -162,18 +162,50 @@ footer {
 }
 
 main {
-  padding-top: 154px;
+  padding-top: 101px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  border-top: 1px solid #FDFFFC;
+}
+
+.navtoggle.responsive li a {
+  display:block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 nav>ul {
   /* removes the bullet point from an unordered list */
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  /* moves the navigation links into one line. code only selects list elements in unordered lists within the nav element. */
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -188,6 +220,8 @@ nav>ul>li>a {
 nav>ul>li>a:hover, nav>ul>li>a:active, nav>ul>li>a:visited {
   color: #587291;
 }
+
+
 
 #hero {
   background-color: #DBD6D5;
@@ -290,6 +324,33 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
+nav>ul { margin: 1em 0;}
+
+  nav>ul>li {
+    /* moves the navigation links into one line. code only selects list elements in unordered lists within the nav element. */
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
+.navtoggle.responsive nav {
+  padding: 0;
+}
+
+.navtoggle.responsive li  {
+  border-top: none;
+}
+
+.navtoggle.responsive li a {
+  padding: 0 15px;
+}
+
   main {
     padding-top: 120px;
   }
@@ -300,6 +361,10 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
+  }
+
+  .col-md-12 {
+    width: 100%;
   }
 
   [class*="col-"] {
