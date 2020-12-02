@@ -117,6 +117,18 @@ a:hover, a:focus, a:active {
   color: #ffffff;
 }
 
+.button-soon {
+  display: inline-block;
+  background-color: #DBD6D5;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #DBD6D5;
+}
+
+
 /* LAYOUT STYLING */
 .section {
   padding: 30px 0
