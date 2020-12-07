@@ -63,7 +63,7 @@ a, a:visited {
 }
 
 a:hover, a:focus, a:active {
-  color: #DBD6D5;
+  color: #000000;
 }
 
 .tags {
