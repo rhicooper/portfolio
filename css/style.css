@@ -121,7 +121,7 @@ a:hover, a:focus, a:active {
   display: inline-block;
   background-color: #DBD6D5;
   text-decoration: none;
-  color: #ffffff;
+  color: #5E5E5E;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -447,4 +447,4 @@ Large devices (1024px or larger)
   /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-  @media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {}
