@@ -1,9 +1,9 @@
 /*
 Colours used:
-Primary Colour (Taupe) #DBD6D5
-Secondary Colour (Grey-Blue) #587291
+Primary Colour (Taupe) #f3eeea
 Tertiary Colour (Cream) #FDFFFC
 Tertiary Colour (Dark Grey) #001524
+Secondary Colour (berry) #aa7c7a
 */
 * {
   box-sizing: border-box;
@@ -30,6 +30,7 @@ h1 {
   font-size: 2em;
   font-weight: 700;
   text-align: center;
+  color: #aa7c7a;
 }
 
 h2 {
@@ -38,12 +39,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.35em;
-  font-weight: 400;
+  font-size: 1.75em;
+  font-weight: 700;
+  color: #aa7c7a;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1.35em;
   font-weight: 400;
 }
 
@@ -58,7 +60,7 @@ img {
 
 /* HYPERLINKS */
 a, a:visited {
-  color: #587291;
+  color: #aa7c7a;
   font-weight: 700;
 }
 
@@ -69,7 +71,7 @@ a:hover, a:focus, a:active {
 .tags {
   font-size: 0.9em;
   font-style: italic;
-  color: #587291;
+  color: #5E5E5E;
 }
 
 /* BUTTONS - Must be at the end of a css doc, or at least under ALL hyperlink stylings */
@@ -96,11 +98,11 @@ a:hover, a:focus, a:active {
 }
 
 .button:active {
-  color: #587291;
+  color: #aa7c7a;
 }
 
 .button.contact {
-  background-color: #001524;
+  background-color: #aa7c7a;
   color: #ffffff;
   text-transform: uppercase;
   border: 2px solid #ffffff;
@@ -119,7 +121,7 @@ a:hover, a:focus, a:active {
 
 .button-soon {
   display: inline-block;
-  background-color: #DBD6D5;
+  background-color: #f3eeea;
   text-decoration: none;
   color: #5E5E5E;
   font-weight: 400;
@@ -131,7 +133,7 @@ a:hover, a:focus, a:active {
 
 /* LAYOUT STYLING */
 .section {
-  padding: 30px 0
+  padding: 30px 0px 0px 0px;
 }
 
 .container {
@@ -161,7 +163,7 @@ a:hover, a:focus, a:active {
 
 
 header {
-  background-color: #DBD6D5;
+  background-color: #f3eeea;
   padding: 10px 0 4px;
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
   position: fixed;
@@ -169,8 +171,9 @@ header {
 }
 
 footer {
-  background-color: #DBD6D5;
+  background-color: #f3eeea;
   text-align: center;
+  margin: 10px 0px 0px 0px;
 }
 
 main {
@@ -225,18 +228,16 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #587291;
+  color: #aa7c7a;
   text-decoration: none;
 }
 
 nav>ul>li>a:hover, nav>ul>li>a:active, nav>ul>li>a:visited {
-  color: #587291;
+  color: #aa7c7a;
 }
 
-
-
 #hero {
-  background-color: #DBD6D5;
+  background-color: #f3eeea;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -248,6 +249,7 @@ nav>ul>li>a:hover, nav>ul>li>a:active, nav>ul>li>a:visited {
   font-size: 0.8em;
   font-weight: 300;
   margin-top: 10px;
+  color: #001524;
 }
 
 #contact {
@@ -266,7 +268,13 @@ nav>ul>li>a:hover, nav>ul>li>a:active, nav>ul>li>a:visited {
 
 .body-text {
   max-width: 900px;
-  margin: 50px auto;
+  margin: 40px auto;
+}
+
+.tagline {
+  max-width: 900px;
+  margin: 20px auto;
+  text-align: center
 }
 
 /* ANIMATIONS */
@@ -384,15 +392,15 @@ nav>ul { margin: 1em 0;}
     padding: 0 10px;
   }
 
-  h2 {
+  h2, h3 {
     text-align: center;
   }
 
-  h3 {
+  h4 {
     margin-top: 0;
   }
 
-  .about h3 {
+  .about h4 {
     text-align: center;
   }
 
@@ -435,8 +443,8 @@ Large devices (1024px or larger)
   }
 
   .sktl {
-    background-color: #587291;
-    color: #ffffff;
+    background-color: #f3eeea;
+    color: #001524;
   }
 
   .about-text {
