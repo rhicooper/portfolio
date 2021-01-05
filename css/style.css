@@ -71,7 +71,7 @@ a:hover, a:focus, a:active {
 .tags {
   font-size: 0.9em;
   font-style: italic;
-  color: #5E5E5E;
+  color: #001524;
 }
 
 /* BUTTONS - Must be at the end of a css doc, or at least under ALL hyperlink stylings */
