@@ -1,6 +1,6 @@
 /*
 Colours used:
-Primary Colour (Taupe) #f3eeea
+Primary Colour (Taupe) #F6F1F1
 Tertiary Colour (Cream) #FDFFFC
 Tertiary Colour (Dark Grey) #001524
 Secondary Colour (berry) #aa7c7a
@@ -77,7 +77,7 @@ a:hover, a:focus, a:active {
 /* BUTTONS - Must be at the end of a css doc, or at least under ALL hyperlink stylings */
 .button {
   display: inline-block;
-  background-color: #001524;
+  background-color: #aa7c7a;
   text-decoration: none;
   color: #ffffff;
   font-weight: 400;
@@ -121,7 +121,7 @@ a:hover, a:focus, a:active {
 
 .button-soon {
   display: inline-block;
-  background-color: #f3eeea;
+  background-color: #F6F1F1;
   text-decoration: none;
   color: #5E5E5E;
   font-weight: 400;
@@ -129,7 +129,6 @@ a:hover, a:focus, a:active {
   border-radius: 3px;
   border-bottom: 2px solid #DBD6D5;
 }
-
 
 /* LAYOUT STYLING */
 .section {
@@ -161,9 +160,8 @@ a:hover, a:focus, a:active {
   padding-bottom: 10px;
 }
 
-
 header {
-  background-color: #f3eeea;
+  background-color: #F6F1F1;
   padding: 10px 0 4px;
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
   position: fixed;
@@ -171,7 +169,7 @@ header {
 }
 
 footer {
-  background-color: #f3eeea;
+  background-color: #F6F1F1;
   text-align: center;
   margin: 10px 0px 0px 0px;
 }
@@ -196,23 +194,24 @@ main {
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   border-top: 1px solid #FDFFFC;
 }
 
 .navtoggle.responsive li a {
-  display:block;
+  display: block;
   padding: 10px 0;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -237,7 +236,7 @@ nav>ul>li>a:hover, nav>ul>li>a:active, nav>ul>li>a:visited {
 }
 
 #hero {
-  background-color: #f3eeea;
+  background-color: #F6F1F1;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -344,7 +343,9 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
-nav>ul { margin: 1em 0;}
+  nav>ul {
+    margin: 1em 0;
+  }
 
   nav>ul>li {
     /* moves the navigation links into one line. code only selects list elements in unordered lists within the nav element. */
@@ -356,20 +357,20 @@ nav>ul { margin: 1em 0;}
   }
 
   .navtoggle li:last-child {
-  display: none;
-}
+    display: none;
+  }
 
-.navtoggle.responsive nav {
-  padding: 0;
-}
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
 
-.navtoggle.responsive li  {
-  border-top: none;
-}
+  .navtoggle.responsive li {
+    border-top: none;
+  }
 
-.navtoggle.responsive li a {
-  padding: 0 15px;
-}
+  .navtoggle.responsive li a {
+    padding: 0 15px;
+  }
 
   main {
     padding-top: 120px;
@@ -377,6 +378,10 @@ nav>ul { margin: 1em 0;}
 
   body {
     font-size: 18px;
+  }
+
+  .col-md-4 {
+    width: 30%;
   }
 
   .col-md-6 {
@@ -415,25 +420,29 @@ nav>ul { margin: 1em 0;}
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  .col-lg-7 {
-    width: 58.33%;
+  .col-lg-3 {
+    width: 25%;
   }
 
   .col-lg-5 {
     width: 41.66%;
   }
 
-  .col-lg-12 {
-    width: 100%;
-    margin: 20px auto;
+  .col-lg-6 {
+    width: 50%;
   }
 
-  .col-lg-3 {
-    width: 25%;
+  .col-lg-7 {
+    width: 58.33%;
   }
 
   .col-lg-9 {
     width: 75%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+    margin: 20px auto;
   }
 
   .container {
@@ -443,7 +452,7 @@ Large devices (1024px or larger)
   }
 
   .sktl {
-    background-color: #f3eeea;
+    background-color: #F6F1F1;
     color: #001524;
   }
 
@@ -455,4 +464,4 @@ Large devices (1024px or larger)
   /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+  @media only screen and (min-width: 1440px) {}
